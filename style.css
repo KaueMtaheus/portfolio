@@ -11,8 +11,12 @@
 
 
 body {
+    background-color: #022859;
     max-width: 1400px;
     margin: 0 auto;
+    color: white;
+    
+
     
 }
 
@@ -29,6 +33,7 @@ header {
 header h1 {
     color:  blue;
     font-size: 2.5rem;
+    text-shadow:  1px 0px 2px rgba(0, 0, 0, 0.446);
 }
 
 header span {
@@ -40,6 +45,7 @@ header .navegacao-primaria {
     gap: 10px;
     align-items: center; 
 }
+
 
 header .navegacao-primaria li a {
     padding: 10px;
@@ -53,29 +59,64 @@ header .navegacao-primaria li a:hover {
     color: blue;  
 }
 
-body {
-    background-color: #022859;
-    color: white;
-}
+/*seção home*/
 
 section#bordao  {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    text-shadow:  3px 0px 3px black;
+
 }
 
 section#bordao div {
     flex: 1;
     margin-right: 20px;
     font-size: 3.5rem;
+    padding-left: 60px;
 }
 
 section#bordao img {
     max-width: 100%;
     height: auto;
-    margin-right: 100
+    
+}
+
+/*seção sobre*/
+
+section#sobre {
+    background-color: white;
+    color: black;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+section#sobre h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+section#sobre div {
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.326);
+}
+
+/*minhas midia query*/
+
+@media (max-width: 320px) {
+    section#bordao div {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -85,10 +126,11 @@ section#bordao img {
         text-align: center;
 
     }  
-    
+
     section#bordao div {
         margin-right: 0;
         font-size: 2rem;
+        padding-left: 0px;
     }
     
 }
