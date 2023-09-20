@@ -52,3 +52,43 @@ header .navegacao-primaria li a {
 header .navegacao-primaria li a:hover {
     color: blue;  
 }
+
+body {
+    background-color: #022859;
+    color: white;
+}
+
+section#bordao  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section#bordao div {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 3.5rem;
+}
+
+section#bordao img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 100
+}
+
+
+@media (max-width: 768px) {
+    section#bordao {
+        flex-direction: column;
+        text-align: center;
+
+    }  
+    
+    section#bordao div {
+        margin-right: 0;
+        font-size: 2rem;
+    }
+    
+}
