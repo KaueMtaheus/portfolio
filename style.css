@@ -23,7 +23,7 @@ body {
 /*header*/
 
 header {
-    background-color:   white;
+    background-color: white;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -113,24 +113,47 @@ section#sobre div {
 
 /*minhas midia query*/
 
-@media (max-width: 320px) {
-    section#bordao div {
-        font-size: 1.5rem;
-    }
-}
-
-
 @media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .navegacao-primaria {
+        display: none; /* Esconde o menu de navegação principal */
+    }
+
+    header .menu-hamburguer {
+        display: block; /* Mostra o ícone do menu hamburguer */
+    }
+
     section#bordao {
         flex-direction: column;
         text-align: center;
-
-    }  
+        padding: 20px;
+    }
 
     section#bordao div {
         margin-right: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 0px;
     }
-    
+
+    section#bordao img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    section#sobre div {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    header .navegacao-secundaria {
+        display: none; /* Esconde os links secundários */
+    }
 }
