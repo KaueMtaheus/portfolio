@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+:root {
+    --cor-primaria:  #022859;
+    --cor-secundaria: #0A4DA6;
+}
 
 
 * {
@@ -10,8 +16,9 @@
 }
 
 
+
 body {
-    background: linear-gradient(to right, #022859,#0A4DA6);
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
     max-width: 1400px;
     margin: 0 auto;
     color: white;
@@ -33,22 +40,26 @@ header h1 {
     color:  blue;
     font-size: 2.5rem;
     text-shadow:  1px 0px 2px rgba(0, 0, 0, 0.446);
+    white-space: nowrap;
+
 }
 
 header span {
-    color:  #022859;
+    color:  var(--cor-primaria);
 }
 
 header .navegacao-primaria {
     display: flex;
     gap: 10px;
     align-items: center; 
+    white-space: nowrap;    /*evita que o texto quebra*/
+
 }
 
 
 header .navegacao-primaria li a {
     padding: 10px;
-    color: #022859;
+    color: var(--cor-primaria);
     font-size: 1.3rem;
     font-weight: bold;
 
@@ -72,10 +83,23 @@ section#bordao  {
     font-size: 2.5rem;
 }
 
+section#bordao2 {
+    width: 20p;
+}
+
+#social a {
+    width: 20px;
+}
+
 
 section#bordao img {
     max-width: 50%;
     height: auto;
+    
+}
+
+section#bordao p {
+    font-weight: 200;
     
 }
 
@@ -117,44 +141,60 @@ section#sobre div {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-right: 50%;
         
     }
 
     header .navegacao-primaria {
-        display: none;                                                  /* Esconde o menu de navegação principal */
+        display: none;  /* Esconde o menu de navegação principal */
+        white-space: nowrap;
     }
 
     header .menu-hamburguer {
-        display: block;                                                /* Mostra o ícone do menu hamburguer */
+        display: block;         /* Mostra o ícone do menu hamburguer */
     }
 
     section#bordao {
         flex-direction: column;
         text-align: center;
         padding: 60px 0px 60px 0px;
+    }
+    
+    section#bordao div {
         font-size: 1.5rem;
     }
 
+    section#bordao p {
+        background: linear-gradient(to right, #c9eeff6a, #eee3ff1b, transparent);
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
 
+    
     section#bordao img {
         display: none;
     }
-
+    
     section#sobre div {
         padding: 20px;
-        font-size: 1rem;
+       
     }
 
     header .navegacao-secundaria {
-        display: none;                                                  /* Esconde os links secundários */
+        display: none;           /* Esconde os links secundários */
     }
 }
 
     /*midia query 900px*/
 
 @media (max-width: 900px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+
     section#bordao {
         flex-direction: column;
         text-align: center;
@@ -162,6 +202,10 @@ section#sobre div {
         font-size: 2rem;
     }
 
+    section#bordao p {
+        ;
+        
+    }
 
     section#bordao img {
         display: none;
