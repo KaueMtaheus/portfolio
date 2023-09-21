@@ -11,12 +11,11 @@
 
 
 body {
-    background-color: #022859;
+    background: linear-gradient(to right, #022859,#0A4DA6);
     max-width: 1400px;
     margin: 0 auto;
     color: white;
     
-
     
 }
 
@@ -63,25 +62,19 @@ header .navegacao-primaria li a:hover {
 
 section#bordao  {
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 30px;
+    padding: 10px 0px 60px 60px;                            /*shortham*/
     text-shadow:  3px 0px 3px black;
-
-}
-
-section#bordao div {
     flex: 1;
     margin-right: 20px;
-    font-size: 3.5rem;
-    padding-left: 60px;
+    font-size: 2.5rem;
 }
 
+
 section#bordao img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     
 }
@@ -116,6 +109,7 @@ section#sobre div {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden; /* Evita a rolagem horizontal */
+
     }
 
     header {
@@ -123,35 +117,29 @@ section#sobre div {
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding-right: 50%;
+        
     }
 
     header .navegacao-primaria {
-        display: none; /* Esconde o menu de navegação principal */
+        display: none;                                                  /* Esconde o menu de navegação principal */
     }
 
     header .menu-hamburguer {
-        display: block; /* Mostra o ícone do menu hamburguer */
+        display: block;                                                /* Mostra o ícone do menu hamburguer */
     }
 
     section#bordao {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
-        padding-bottom: 0px;
+        padding: 60px 0px 60px 0px;
+        font-size: 1.5rem;
     }
 
-    section#bordao div {
-        margin-right: 0;
-        font-size: 1.5rem;
-        padding-left: 0px;
-        
-    }
 
     section#bordao img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
+        display: none;
     }
 
     section#sobre div {
@@ -160,6 +148,22 @@ section#sobre div {
     }
 
     header .navegacao-secundaria {
-        display: none; /* Esconde os links secundários */
+        display: none;                                                  /* Esconde os links secundários */
+    }
+}
+
+    /*midia query 900px*/
+
+@media (max-width: 900px) {
+    section#bordao {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0px 80px 0px;
+        font-size: 2rem;
+    }
+
+
+    section#bordao img {
+        display: none;
     }
 }
