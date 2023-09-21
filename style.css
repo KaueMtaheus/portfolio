@@ -114,12 +114,16 @@ section#sobre div {
 /*minhas midia query*/
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Evita a rolagem horizontal */
+    }
+
     header {
         padding: 10px;
     }
 
     header h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     header .navegacao-primaria {
@@ -134,6 +138,7 @@ section#sobre div {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        padding-bottom: 0px;
     }
 
     section#bordao div {
