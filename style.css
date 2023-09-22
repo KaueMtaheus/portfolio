@@ -69,11 +69,16 @@ header .navegacao-primaria li a:hover {
     color: blue;  
 }
 
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
 /*seção home*/
 
 section#bordao  {
     display: flex;
-    white-space: nowrap;
+    white-space: nowrap;                            
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px 60px 60px;                            /*shortham*/
@@ -83,13 +88,6 @@ section#bordao  {
     font-size: 2.5rem;
 }
 
-section#bordao2 {
-    width: 20p;
-}
-
-#social a {
-    width: 20px;
-}
 
 
 section#bordao img {
@@ -151,8 +149,18 @@ section#sobre div {
         white-space: nowrap;
     }
 
-    header .menu-hamburguer {
+    .navegacao-primaria-escondida {
+        display: none;
+    }
+
+    .navegacao-primaria-visivel {
+        display: flex;
+    }
+    .menu{
         display: block;         /* Mostra o ícone do menu hamburguer */
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
     }
 
     section#bordao {
@@ -166,7 +174,6 @@ section#sobre div {
     }
 
     section#bordao p {
-        background: linear-gradient(to right, #c9eeff6a, #eee3ff1b, transparent);
         padding: 5px;
         border-radius: 5px;
         
@@ -200,11 +207,12 @@ section#sobre div {
         text-align: center;
         padding: 60px 0px 80px 0px;
         font-size: 2rem;
-    }
+    }   
 
     section#bordao p {
-        ;
-        
+        padding: 5px;
+            border-radius: 5px;
+            
     }
 
     section#bordao img {
