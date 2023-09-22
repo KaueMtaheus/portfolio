@@ -70,10 +70,7 @@ header .navegacao-primaria li a:hover {
 }
 
 
-.menu {
-    display: none;
-    cursor: pointer;
-}
+
 /*seção home*/
 
 section#bordao  {
@@ -126,6 +123,14 @@ section#sobre div {
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.326);
 }
 
+header .menu-toggle {
+    display: none;
+}
+
+header .navbar {
+    display: flex;
+}
+
 /*minhas midia query*/
 
 @media (max-width: 768px) {
@@ -145,6 +150,52 @@ section#sobre div {
     header .navegacao-primaria {
         display: none;  /* Esconde o menu de navegação principal */
         white-space: nowrap;
+    }
+
+    
+    header .menu-toggle {
+        display: block; /* Exibir o menu de hambúrguer */
+    }
+
+    header .navbar {
+        display: none; /* Ocultar o menu de navegação principal */
+        background-color: #333; /* Cor de fundo do menu de hambúrguer */
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        left: 0;
+        width: 100%;
+        flex-direction: column; /* Para empilhar os itens verticalmente */
+    }
+
+    header .navbar.active {
+        display: flex; /* Exibir o menu de hambúrguer quando 'active' */
+    }
+
+    /* Outros estilos personalizados para o menu de hambúrguer */
+    header .navbar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    header .navbar li {
+        margin: 10px 0;
+    }
+
+    header .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    header .navbar a:hover {
+        color: blue;
+    }
+
+    .menu-toggle img {
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -176,6 +227,7 @@ section#sobre div {
     header .navegacao-secundaria {
         display: none;           /* Esconde os links secundários */
     }
+
 }
 
     /*midia query 900px*/
