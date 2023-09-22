@@ -131,7 +131,6 @@ section#sobre div {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden; /* Evita a rolagem horizontal */
-
     }
 
     header {
@@ -141,7 +140,6 @@ section#sobre div {
     header h1 {
         font-size: 1.5rem;
         padding-right: 50%;
-        
     }
 
     header .navegacao-primaria {
@@ -149,19 +147,6 @@ section#sobre div {
         white-space: nowrap;
     }
 
-    .navegacao-primaria-escondida {
-        display: none;
-    }
-
-    .navegacao-primaria-visivel {
-        display: flex;
-    }
-    .menu{
-        display: block;         /* Mostra o ícone do menu hamburguer */
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-    }
 
     section#bordao {
         flex-direction: column;
@@ -178,8 +163,7 @@ section#sobre div {
         border-radius: 5px;
         
     }
-
-    
+   
     section#bordao img {
         display: none;
     }
