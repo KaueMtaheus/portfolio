@@ -108,19 +108,31 @@ section#sobre {
     padding: 20px;
 }
 
-section#sobre h2 {
-    text-align: center;
-    padding: 10px;
-}
 
 section#sobre div {
     background-color: white;
-    padding: 50px;
+    padding: 30px;
+    padding-top: 0px;
     margin: auto;
     max-width: 800px;
-    border-radius: 10px;
+    margin-top: 40px;
+    border-radius: 0px 0px 10px 10px;
     border: 1px solid black;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.326);
+}
+
+section#sobre h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: #DFE7F2;
+    margin: auto;
+    
+}
+
+section#sobre p {
+   padding: 5px;
+   margin: 2px;
+   letter-spacing: 2px;
 }
 
 header .menu-toggle {
@@ -140,6 +152,7 @@ header .navbar {
 
     header {
         padding: 10px;
+        
     }
 
     header h1 {
@@ -150,21 +163,36 @@ header .navbar {
     header .navegacao-primaria {
         display: none;  /* Esconde o menu de navegação principal */
         white-space: nowrap;
+        
     }
 
     
     header .menu-toggle {
         display: block; /* Exibir o menu de hambúrguer */
+        position: fixed;
+        padding-left: 70%;
+        transition: 0.4ms;
     }
 
+    .menu-toggle img {
+        border:  1px solid rgba(0, 0, 0, 0.199);
+        border-radius: 3px;
+        box-shadow: -1px 0px 0px 0px #00000026;
+    }
+    
     header .navbar {
         display: none; /* Ocultar o menu de navegação principal */
-        background-color: #333; /* Cor de fundo do menu de hambúrguer */
-        position: absolute;
-        top: 60px; /* Ajuste conforme necessário */
-        left: 0;
-        width: 100%;
+        background-color: rgba(255, 255, 255, 0.32); /* Cor de fundo do menu de hambúrguer */
+        position: fixed;
+        padding: 5px;
+        margin-left: 65%;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 255, 0.099);
+        top: 50px; /* Ajuste conforme necessário */
+        max-width: 30%;
         flex-direction: column; /* Para empilhar os itens verticalmente */
+       
     }
 
     header .navbar.active {
@@ -190,7 +218,7 @@ header .navbar {
     }
 
     header .navbar a:hover {
-        color: blue;
+        color: blue
     }
 
     .menu-toggle img {
@@ -198,7 +226,13 @@ header .navbar {
         height: 20px;
     }
 
+    .navegacao-primaria {
+        display: none;
+    }
 
+    .navegacao-primaria.active {
+        display: block;
+    }
     section#bordao {
         flex-direction: column;
         text-align: center;
