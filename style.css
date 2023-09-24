@@ -164,7 +164,7 @@ section#projetos {
 #divpro  {
     text-align: center;
     color: var(--cor-primaria);
-    padding: 20px;
+    padding: 30px;
 }
 
 .quadro  {
@@ -176,6 +176,8 @@ section#projetos {
     vertical-align: top;
     box-sizing: border-box;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.326);
+    border-radius: 10px;
+    
     
 }
 
@@ -211,9 +213,7 @@ section#projetos {
     }
 
     .menu-toggle img {
-        border:  1px solid rgba(0, 0, 0, 0.199);
         border-radius: 3px;
-        box-shadow: -1px 0px 0px 0px #00000026;
     }
     
     header .navbar {
@@ -297,11 +297,12 @@ section#projetos {
         display: none;           /* Esconde os links secundários */
     }
 
+     
     .quadro {
-        width: 80%;
-        margin: 10px;
-        justify-content: center;
-        
+        display: block;
+        width: 70%;
+        margin: 0 auto; 
+        margin-bottom: 20px;
     }
 
  
