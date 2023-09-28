@@ -105,6 +105,10 @@ section#bordao p {
 
 section#sobre {
     background-color: white;
+    background-image: url(imagens/iconesnavg/em-formacao.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
     width: auto;
     margin: auto;
@@ -215,8 +219,47 @@ section#projetos {
     font-size: 1rem;
     background-color: blue;
 }
+/*------------------------------------------habilidades*/
 
+section#habilidades {
+    background-color: var(--cor-primaria);
+    padding-top: 0px;
+}
 
+div#titu {
+    text-align: center;
+    color: blue;
+    background-color: white;
+    padding: 10px;
+    margin-top: 0px;
+    
+}
+
+.hab h2 {
+    text-align: center;
+    background-color: #DFE7F2;
+    color: var(--cor-primaria);
+    padding: 5px;
+    
+}
+
+.hab {
+    padding-top: 0px;
+    margin: 20px;
+    color: black;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#di, #di2 {
+    margin-left: 48%;
+        
+}
+
+.hab p {
+    padding: 20px;
+}
 
 
 
