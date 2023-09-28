@@ -88,8 +88,6 @@ section#bordao  {
     padding-bottom: 0px;
 }
 
-
-
 section#bordao img {
     max-width: 50%;
     height: auto;
@@ -105,18 +103,11 @@ section#bordao p {
 
 section#sobre {
     background-color: white;
-    background-image: url(imagens/iconesnavg/em-formacao.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: black;
     width: auto;
     margin: auto;
     padding: 30px;
-    transition: 0.4s;
-    
 }
-
 
 section#sobre div {
     background-color: white;
@@ -196,6 +187,20 @@ section#projetos {
     border-radius: 10px;
 }
 
+#q1 {
+    background-image: url(imagens/projetocordeu.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#q2 {
+    background-image: url(imagens/projetodroid.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .hidden {
     display: none;
 }
@@ -244,25 +249,38 @@ div#titu {
 }
 
 .hab {
+    display: inline-block;
     padding-top: 0px;
     margin: 20px;
     color: black;
     background-color: white;
     width: 50%;
     border-radius: 10px;
-}
-
-#di, #di2 {
-    margin-left: 48%;
-        
+    
 }
 
 .hab p {
     padding: 20px;
 }
 
+.imghab {
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 0px;
 
+    
+}
 
+.imghab img {
+  
+    padding-top: 30px;
+    width: 40%;
+}
+
+.imghab img:hover {
+    padding: 5px;
+  
+}
 
 
 /*-----------------------------------minhas midia query*/
@@ -391,8 +409,29 @@ div#titu {
         display: none;
     }
 
+    
+    .hab {
+        display: inline-block;
+        padding-top: 0px;
+        margin: 20px;
+        width: 90%;
+        
+    }
 
+    .imghab {
+        display: inline-block;
+        margin-left: 35%;   
+    }
+    
+    .imghab img {
+        padding-top: 0px;
+        width: 40%;
+        
+    }
+    
   
+
+
 }
 
     /*-------------------------midia query 900px*/
@@ -425,5 +464,28 @@ div#titu {
         width: 90%; /* Defina a largura para ocupar toda a largura disponível */
         margin: 10 auto; /* Centralize horizontalmente */
     }
+
+    .hidden  {
+        display: none;
+    }
+
+    .hab {
+        display: inline-block;
+        padding-top: 0px;
+        margin: 20px;
+        width: 90%;
+        
+    }
+
+    .imghab {
+        display: inline-block;
+        margin-left: 40%;   
+    }
+    
+    .imghab img {
+        padding-top: 0px;
+        width: 40%;
+       
+
 
 }
