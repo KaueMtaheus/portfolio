@@ -175,6 +175,12 @@ section#projetos {
     width: 35px;
 }
 
+#obs {
+    background-color: white;
+    color: red;
+    font-size: 1rem;
+}
+
 .quadro  {
     display: inline-block;
     background-color: white;
@@ -187,12 +193,20 @@ section#projetos {
     border-radius: 10px;
 }
 
-#q1 {
+#q1  {
     background-image: url(imagens/projetocordeu.PNG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    font-size: 0px;
+    text-align: center;
 }
+#q1:hover {
+    padding-bottom: 262px;
+    background-image: none;
+    font-size: 2rem;
+}
+
 
 #q2 {
     background-image: url(imagens/projetodroid.PNG);
