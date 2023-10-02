@@ -176,9 +176,10 @@ section#projetos {
 }
 
 #obs {
+    text-align: center;
     background-color: white;
     color: red;
-    font-size: 1rem;
+    font-size: 11px;
 }
 
 .quadro  {
@@ -201,8 +202,13 @@ section#projetos {
     font-size: 0px;
     text-align: center;
 }
+
+ a {
+    padding-top: 30px;
+}
+
 #q1:hover {
-    padding-bottom: 262px;
+    padding-bottom: 22%;
     background-image: none;
     font-size: 2rem;
 }
