@@ -183,8 +183,9 @@ section#projetos {
 }
 
 .quadro  {
+    position: relative;
     display: inline-block;
-    background-color: white;
+    background-color: #B3CFF2;
     width: 30%;
     margin: 14px;
     padding-bottom: 300px;
@@ -203,22 +204,55 @@ section#projetos {
     text-align: center;
 }
 
- a {
-    padding-top: 30px;
-}
-
-#q1:hover {
-    padding-bottom: 22%;
-    background-image: none;
-    font-size: 2rem;
-}
-
 
 #q2 {
     background-image: url(imagens/projetodroid.PNG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    font-size: 0px;
+    text-align: center;
+}
+
+#q1:hover {
+font-size: 2rem;
+}
+
+#q2:hover {
+    font-size: 2rem;
+}
+
+.dire {
+    position: absolute;
+    text-align: center;
+    margin-top: 30%;
+    left: 20px;
+    right: 20px;
+    background-color: #022859;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-shadow:  3px 0px 3px black;
+}
+
+.dire a {
+    color: white;
+}
+
+
+
+.bre {
+    position: absolute;
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-top: 30%;
+    border-radius: 10px;
+    left: 20%;
+    right: 20%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 50px 10px 50px 10px;
+    text-shadow:  3px 0px 3px black;
 }
 
 .hidden {
