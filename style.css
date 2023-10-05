@@ -179,7 +179,7 @@ section#projetos {
     text-align: center;
     background-color: white;
     color: red;
-    font-size: 11px;
+    font-size: 9px;
 }
 
 .quadro  {
@@ -215,7 +215,7 @@ section#projetos {
 }
 
 #q1:hover {
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 #q2:hover {
@@ -228,7 +228,7 @@ font-size: 2rem;
     margin-top: 30%;
     left: 20px;
     right: 20px;
-    background-color: #022859;
+    background-color: #0228597f;
     color: white;
     font-weight: bold;
     border-radius: 20px;
@@ -244,7 +244,7 @@ font-size: 2rem;
 .bre {
     position: absolute;
     text-align: center;
-    color: var(--cor-primaria);
+    color: white;
     margin-top: 30%;
     border-radius: 10px;
     left: 20%;
@@ -252,7 +252,7 @@ font-size: 2rem;
     font-size: 2rem;
     font-weight: bold;
     padding: 50px 10px 50px 10px;
-    text-shadow:  3px 0px 3px black;
+    text-shadow:  2px 0px 2px rgba(0, 0, 0, 0.382);
 }
 
 .hidden {
@@ -287,11 +287,13 @@ section#habilidades {
 
 div#titu {
     text-align: center;
-    color: blue;
-    background-color: white;
+    color: white;
+    background-color: blue;
     padding: 10px;
     margin-top: 0px;
-    
+    text-shadow:  2px 0px 2px rgba(0, 0, 0, 0.382);
+    margin-bottom: 40px;
+    font-size: 1.5;
 }
 
 .hab h2 {
@@ -321,12 +323,9 @@ div#titu {
     display: inline-block;
     margin-left: 15%;
     margin-top: 0px;
-
-    
 }
 
 .imghab img {
-  
     padding-top: 30px;
     width: 40%;
 }
