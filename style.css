@@ -55,6 +55,7 @@ header .navegacao-primaria {
     gap: 10px;
     align-items: center; 
     white-space: nowrap;    /*evita que o texto quebra*/
+    
 
 }
 
@@ -71,6 +72,11 @@ header .navegacao-primaria li a:hover {
     color: blue;  
 }
 
+
+.navegacao-primaria {
+    position: relative;
+    padding: 10px;
+}
 
 
 /*------------------------------seção home*/
@@ -188,7 +194,7 @@ section#projetos {
     background-color: #B3CFF2;
     width: 30%;
     margin: 14px;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     vertical-align: top;
     box-sizing: border-box;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.326);
