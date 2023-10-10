@@ -34,7 +34,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 
 header h1 {
@@ -42,8 +41,6 @@ header h1 {
     font-size: 2.5rem;
     text-shadow:  1px 0px 2px rgba(0, 0, 0, 0.446);
     white-space: nowrap;
-    
-
 }
 
 header span {
@@ -73,10 +70,6 @@ header .navegacao-primaria li a:hover {
 }
 
 
-.navegacao-primaria {
-    position: relative;
-    padding: 10px;
-}
 
 
 /*------------------------------seção home*/
