@@ -101,11 +101,11 @@ section#bordao p {
 /*---------------------------------seção sobre*/
 
 section#sobre {
-    background-color: white;
+    background: linear-gradient(to bottom, white, #DFE7F2, white);
     color: black;
     width: auto;
     margin: auto;
-    padding: 30px;
+    padding: 150px;
 }
 
 section#sobre div {
@@ -195,7 +195,7 @@ section#projetos {
 }
 
 #q1  {
-    background-image: url(imagens/projetocordeu.PNG);
+    background-image: url(imagens/projetotodoavanca.PNG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -205,6 +205,15 @@ section#projetos {
 
 
 #q2 {
+    background-image: url(imagens/projetocordeu.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 0px;
+    text-align: center;
+}
+
+#q3 {
     background-image: url(imagens/projetodroid.PNG);
     background-repeat: no-repeat;
     background-position: center center;
@@ -218,6 +227,10 @@ section#projetos {
 }
 
 #q2:hover {
+    font-size: 2rem;
+}
+
+#q3:hover {
     font-size: 2rem;
 }
 
@@ -237,8 +250,6 @@ section#projetos {
 .dire a {
     color: white;
 }
-
-
 
 .bre {
     position: absolute;
@@ -275,24 +286,24 @@ section#projetos {
 
 #show-more:hover {
     font-size: 1rem;
-    background-color: blue;
+    cursor: pointer;
 }
 /*------------------------------------------habilidades*/
 
 section#habilidades {
-    background-color: var(--cor-primaria);
+    background: linear-gradient(to right, black, var(--cor-primaria), var(--cor-primaria), black);
     padding-top: 0px;
 }
 
 div#titu {
     text-align: center;
-    color: white;
-    background-color: blue;
+    color: var(--cor-primaria);
+    background-color: #ffff;
     padding: 10px;
     margin-top: 0px;
     text-shadow:  2px 0px 2px rgba(0, 0, 0, 0.382);
     margin-bottom: 40px;
-    font-size: 1.5;
+    font-size: 1.5rem;
 }
 
 .hab h2 {
@@ -312,6 +323,10 @@ div#titu {
     width: 50%;
     border-radius: 10px;
     
+}
+
+#ichab {
+    width: 35px;
 }
 
 .hab p {
@@ -433,18 +448,13 @@ div#titu {
 
     section#bordao p {
         padding: 5px;
-      
-        
     }
    
     section#bordao img {
         display: none;
     }
     
-    section#sobre div {
-        padding: 20px;
-       
-    }
+
 
     header .navegacao-secundaria {
         display: none;           /* Esconde os links secundários */
